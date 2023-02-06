@@ -1,0 +1,972 @@
+@font-face {
+    font-family: 'Lato';
+    src: url(./fonts/Lato-Bold.ttf) format("truetype");
+    font-style: bold;
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(./fonts/Lato-Black.ttf) format("truetype");
+    font-style: black;
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(./fonts/Lato-Regular.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(./fonts/Lato-Thin.ttf) format("truetype");
+    font-style: thin;
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(./fonts/Lato-Light.ttf) format("truetype");
+    font-style: light;
+    font-weight: 300;
+}
+* {
+    margin: 0; 
+    padding: 0; 
+    text-decoration: none;
+}
+body {
+    overflow-x: hidden;
+}
+.novigation{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 75px;
+    background: #222222;
+}
+.logoOfCompany{
+    margin-left: 14.44%;
+}
+.logoOfSearching{
+    margin-left: 2.56%;
+}
+.logoOfMenu{
+    margin-left: 53.69%;
+    background: none;
+    border: 0;
+}
+.menuDropdown{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 75px;
+    right: 0%;
+}
+.menuDropdownContent{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 232px;
+    height: 634px;
+    background: #FFFFFF;
+    gap: 11px;
+}
+.menuText{
+    margin-top: 32px;
+    margin-left: 33px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 24px;;
+}
+.headlineMenuText{
+    margin-left: 33px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    margin-bottom: 0;
+}
+.blockOfRegularText{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    margin-left: 53.5px;
+    margin-top: 1px;
+    margin-bottom: 9px;
+}
+.textRegular{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color:#6F6E6E;
+}
+.logoOfMenu:hover + .menuDropdown{
+    display:block;
+}
+.logoOfProf{
+    margin-left: 2.06%;
+}
+.logoOfShop{
+    margin-left: 2.06%;
+}
+.introducingBlock{
+    position: relative;
+    width: 100%;
+    height: 764px;
+    background: #F1E4E6;
+}
+.imgOfIntroducingBlock{
+    position: relative;
+}
+.introducingBlockPinkBlock{
+    position: absolute;
+    width: 12px;
+    height: 92px;
+    background: #F16D7F;
+    left: 54%;
+    top: 290px;
+}
+.introducingText{
+    word-wrap: normal;
+    position: absolute;
+    left: 55.75%;
+    top: 290px;
+    max-width: 377px;
+    font-family: 'Lato';
+    font-size: 32px;
+    color: #222222;
+    font-weight: 700;
+    line-height: 38.4px;
+}
+.menu{
+    position: relative;
+    display: flex;
+    max-width: 100%;
+    max-height: 631px;
+    justify-content: center;
+    padding: 65px 0px 96px;
+}
+.hotPoints{
+    max-width: 1140px;
+    max-height: 470px;
+    display: flex;
+    position: relative;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.hotPointsFilterRegular{
+    background: rgba(33, 22, 22, 0.7);
+    width: 360px;
+    height: 260px;
+    position: absolute;
+}
+.hotPointsFilterWide{
+    background: rgba(33, 22, 22, 0.7);
+    width: 1140px;
+    height: 180px;
+    position: absolute;
+}
+
+.hotPoint{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.hotPointTextOne{
+    position: absolute;
+    width: 154px;
+    height: 50px;
+    text-align: center;
+    font-family: 'Lato';
+}
+.hotPointTextTwo{
+    position: absolute;
+    width: 110px;
+    height: 50px;
+    text-align: center;
+    font-family: 'Lato';
+}
+.hotPointTextThree{
+    position: absolute;
+    width: 115px;
+    height: 50px;
+    text-align: center;
+    font-family: 'Lato';
+}
+.hotPointTextFour{
+    position: absolute;
+    width: 160px;
+    height: 50px;
+    text-align: center;
+    font-family: 'Lato';
+}
+.feturedItems{
+    max-width: 100%;
+    max-height: 1800px;
+    padding: 0px 230px 0px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+}
+.feturedItemsArticle{
+    text-align:  center;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+}
+.feturedItemsDiscription{
+    margin-top: 6px;
+    text-align:  center;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+}
+.cardsLook{
+    width: 1140px;
+    margin-top: 48px;
+    margin-bottom: 63px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.cardLook{
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 581px;
+    background: #F8F8F8;
+    padding-bottom: 19px;
+}
+.cardLookBG{
+    position: relative;
+    background: #F7E4E2;
+    width: 360px;
+    height: 420px;
+}
+.cardLookImgButton{
+    width: 360px;
+    height: 420px;
+    background-color: rgba(58, 56, 56, 0);
+    position: absolute;
+    border: none;
+    margin: 0px 0px 0px 0px;
+}
+.cardLookAddToCart{
+    display: none;
+    align-items: center;
+    padding-left: 13px;
+    padding-right: 12px;
+    margin-left: 111.5px;
+    margin-top: 188.5px;
+    width: 138px;
+    height: 43px;
+    position: absolute;
+    flex-direction: row;
+    gap: 11px;
+    border: 1px solid #FFFFFF;
+    background: none;
+}
+.AddToCart{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+.cardLookImgSpecial{
+    position: absolute;
+    align-self: center;
+    margin-top: 9px 12px 8px;
+}
+.cardLookName{
+    margin: 25px 18px 0px;
+    width: 148.11px;
+    height: 16px;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+.cardLookDiscriptionName{
+    margin: 13px 18px 0px;
+    width: 314.74px;
+    height: 51px;
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.cardLookCost{
+    margin: 18px 18px 0px;
+    width: 52.46px;
+    height: 19px;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    border: 1px solid #FF6A6A;
+    width: 211px;
+    height: 47px;
+    padding: 0px;
+    background-color: transparent;
+    margin-bottom: 109px;
+    
+}
+
+.fatInroducingBlock{
+    font-size: 48px;
+    font-style: black;
+    font-weight: 900;
+    line-height: 57.6px;
+}
+.pinkColorIntroducingBlock{
+    color: #F16D7F;
+    font-weight: 700;
+}
+.pinkColorHotPoints{
+    color: #F16D7F;
+    font-size: 24px;
+    font-weight: 700;
+}
+.whiteColorHotPoints{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+}
+footer{
+    height: 868px;
+    width: 100%;
+}
+.footerInformation{
+    width: 100%;
+    height: 341px;
+    background-color: #222224;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 1.88%
+}
+.footerInformationBlock{
+    width: 22.5%;
+    height: 134px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.footerInformationImg{
+    margin-bottom: 0;
+}
+.footerInformationHeadlineOne{
+    margin-top: 28px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+}
+.footerInformationHeadlineTwo{
+    margin-top: 19px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+}
+.footerInformationHeadlineThree{
+    margin-top: 24px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+}
+.footerInformationDescription{
+    margin-top: 16px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+}
+.footerSubscribe{
+    width: 100%;    
+    height: 448px;
+}
+.backGroundFooterSubscribe{
+    position: absolute;
+    width: 100%;
+    height: 448px;
+}
+.backGroundFooterSubscribeFilter{
+    position: absolute;
+    width: 100%;
+    height: 448px;
+    background-color: rgba(244, 244, 244, 0.7);
+}
+.avatar{
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    margin-top: 97px;
+    margin-left: 22%;
+}
+.avatarDescription{
+    position: absolute;
+    width: 22.47%;
+    height: 99px;
+    margin-top: 223px;
+    margin-left: 14.39%;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+.subscribe{
+    position: absolute;
+    width: 34.81%;
+    height: 61px;
+    margin-top: 150px;
+    margin-left: 46.7%;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30.1px;
+    text-align: center;
+    color: #222224;  
+}
+.subscribeText{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40.13px;
+}
+.footerSubscribeEmail{
+    position: absolute;
+    left: 57.31%;
+    margin-top: 243px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+input{
+    width: 256px;
+    height: 49px;
+    padding-left: 22px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #222224;
+    opacity: 0.67;
+    background-color: #E1E1E1;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: none;
+}
+.subscribeButton{
+    width: 100px;
+    height: 49px;
+    background-color: #F16D7F;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 6px 7px 6px;
+    color: #FFFFFF;
+    border: none;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.footerBottom{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 79px;
+    background-color: #222224;
+}
+.footerBottomText{
+    position: relative;
+    margin-left: 14.69%;
+    width: 332px;
+    height: 19px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+}
+.footerBottoms{
+    position: relative;
+    display: flex;
+    margin-right: 14.4%;
+    gap: 8px;
+}
+.footerBottomOne{
+    width: 32px;
+    height: 32px;
+    margin: auto;
+    border: none;
+}
+.footerBottomTwo{
+    width: 32px;
+    height: 32px;
+    margin: auto;
+    border: none;
+}
+.footerBottomThree{
+    width: 32px;
+    height: 32px;
+    margin: auto;
+    border: none;
+}
+.footerBottomFour{
+    width: 32px;
+    height: 32px;
+    margin: auto;
+    border: none;
+}
+.footerBottomOne:hover {
+    background-color: #F16D7F;
+  }
+  .footerBottomTwo:hover {
+    background-color: #F16D7F;
+  }
+  .footerBottomThree:hover {
+    background-color: #F16D7F;
+  }
+  .footerBottomFour:hover {
+    background-color: #F16D7F;
+  }
+  .subscribeButton:hover {
+    background-color: #E05C6E;
+  }
+  .btn:hover{
+    background-color: #F16D7F;
+    color: #FFFFFF;
+  }
+  .cardLookImgButton:hover{
+    background-color: rgba(58, 56, 56, 0.86);
+  }
+  .cardLookImgButton:hover+.cardLookAddToCart{
+    display: flex;
+  }
+  
+  
+@media (min-width: 768px) and (max-width:1600px) {
+    .novigation{
+        width: 100%;
+        height: 74px;
+    }
+    .logoOfCompany{
+        left: 4.17%;
+    }
+    .logoOfSearching{
+        left: 15.23%;
+    }
+    .logoOfMenu{
+        margin-left: 73.83%;
+    }
+    .logoOfProf{
+        margin-left: 81.25%;
+    }
+    .logoOfShop{
+        margin-left: 90.49%;
+    }
+    .introducingBlock{
+        width: 100%;
+        height: 367.57px;
+    }
+    .imgOfIntroducingBlock{
+        width: 386px;
+        height: 368px;
+    }
+    .introducingBlockPinkBlock{
+        left: 55.34%;
+        top: 138px;
+    }
+    .introducingText{
+        left: 58.98%;
+        top: 138.1px;
+        max-width: 283px;
+        max-height: 78px;
+        font-size: 24px;
+        line-height: 28.8px
+    }
+    .menu{
+        max-width: 100%;
+        max-height: 477.96px;
+        padding: 65px 0px 109.92px;
+    }
+    .hotPoints{
+        max-width: 736px;
+        max-height: 303.04px;
+        gap: 19px;
+    }
+    .hotPointsImgRegular{
+        width: 231.97px;
+        height: 167.62px;
+    }
+    .hotPointsImgWide{
+        width: 734.58px;
+        height: 116.04px;
+
+    }
+    .hotPointsFilterRegular{
+        width: 231.97px;
+        height: 167.62px;
+    }
+    .hotPointsFilterWide{
+        width: 734.58px;
+        height: 116.04px;
+    }
+    .feturedItems{
+        max-width: 100%;
+        max-height: 2200px;
+        display: flex;
+    }
+    .cardsLook{
+        width: 736px;
+        height: 2000px;
+        margin-top: 48px;
+        margin-bottom: 63px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+        align-items: center;
+    }
+    .fatInroducingBlock{
+        font-size: 48px;
+        font-style: black;
+        font-weight: 900;
+        line-height: 57.6px;
+    }
+    .pinkColorIntroducingBlock{
+        color: #F16D7F;
+        font-weight: 700;
+    }
+    footer{
+        height: 1303px;
+        width: 100%;
+    }
+    .footerInformation{
+        width: 100%;
+        height: 610px;
+        background-color: #222224;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        flex-flow: column;
+        gap: 48.47px
+    }
+    .footerInformationBlock{
+        width: 46.9%;
+        height: 134px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .footerInformationImg{
+        margin-bottom: 0;
+    }
+    .footerSubscribe{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;    
+        height: 614px;
+    }
+    .backGroundFooterSubscribe{
+        position: absolute;
+        width: 100%;
+        height: 614px;
+    }
+    .backGroundFooterSubscribeFilter{
+        position: absolute;
+        width: 100%;
+        height: 614px;
+        background-color: rgba(244, 244, 244, 0.7);
+    }
+    .avatar{
+        position: relative;
+        width: 96px;
+        height: 96px;
+        margin: 0;
+        margin-top: 64px;
+        
+    }
+    .avatarDescription{
+        position: relative;
+        width: 46.8%;
+        margin: 0;
+        margin-top: 30px;
+    }
+    .subscribe{
+        position: relative;
+        width: 72.53%;
+        margin: 0;
+        margin-top: 48px;
+    }
+    .footerSubscribeEmail{
+        position: absolute;
+        left: 57.31%;
+        margin-top: 243px;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .footerSubscribeEmail{
+        position: relative;
+        left: 0;
+        margin: 0;
+        margin-top: 27px;
+    }
+    .footerBottomText{
+        margin-left: 4.17%;
+        width: 251px;
+    }
+    .footerBottoms{
+        margin-right: 4.21%;
+    }
+}
+
+@media (min-width: 360px) and (max-width:768px) {
+    .novigation{
+        width: 100%;
+        height: 74px;
+    }
+    .logoOfCompany{
+        margin-left: 4.27%;;
+    }
+    .logoOfSearching{
+        margin-left: 10.9%;
+    }
+    .logoOfMenu{
+        margin-left: 53.3%;
+    }
+    .logoOfProf{
+        display:none;
+    }
+    .logoOfShop{
+        display:none;
+    }
+    .introducingBlock{
+        width: 100%;
+        height: 363px;
+    }
+    .imgOfIntroducingBlock{
+        display:none;
+    }
+    .introducingBlockPinkBlock{
+        left: 14.9%;
+        top: 150px;
+    }
+    .introducingText{
+        left: 22.13%;
+        top: 148px;
+        max-width: 236px;
+        max-height: 66px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .menu{
+        max-width: 100%;
+        max-height: 1076px;
+        padding: 64px 0px 64px;
+    }
+    .hotPoints{
+        max-width: 100%;
+        max-height: 1000px;
+        gap: 32px;
+        flex-direction: column;
+    }
+    .hotPointsImgRegular{
+        width: 343px;
+        height: 247px;
+    }
+    .hotPointsImgWide{
+        width: 343px;
+        height: 111px;
+
+    }
+    .hotPointsFilterRegular{
+        width: 343px;
+        height: 247px;
+    }
+    .hotPointsFilterWide{
+        width: 343px;
+        height: 111px;
+    }
+    .feturedItems{
+        max-width: 100%;
+        max-height: 4300px;
+        padding: 0px 85px 0px;    
+    }
+    .cardsLook{
+        width: 360px;
+        height: auto;
+        margin-top: 65px;
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn{
+        margin-top: 65px;
+    }
+    .fatInroducingBlock{
+        font-size: 38px;
+        font-style: black;
+        font-weight: 900;
+        line-height: 45.6px;
+    }
+    .pinkColorIntroducingBlock{
+        color: #F16D7F;
+        font-weight: 700;
+    }
+    footer{
+        height: 1303px;
+        width: 100%;
+    }
+    .footerInformation{
+        width: 100%;
+        height: 610px;
+        background-color: #222224;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        flex-flow: column;
+        gap: 47px
+    }
+    .footerInformationBlock{
+        width: 46.9%;
+        height: 134px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .footerInformationImg{
+        margin-bottom: 0;
+    }
+    .footerSubscribe{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;    
+        height: 614px;
+    }
+    .backGroundFooterSubscribe{
+        position: absolute;
+        width: 100%;
+        height: 614px;
+    }
+    .backGroundFooterSubscribeFilter{
+        position: absolute;
+        width: 100%;
+        height: 614px;
+        background-color: rgba(244, 244, 244, 0.7);
+    }
+    .avatar{
+        position: relative;
+        width: 91px;
+        height: 91px;
+        margin: 0;
+        margin-top: 64px;
+        
+    }
+    .avatarDescription{
+        position: relative;
+        width: 91.5%;
+        margin: 0;
+        margin-top: 30px;
+        font-size: 19px;
+    }
+    .subscribe{
+        position: relative;
+        width: 72.3%;
+        margin: 0;
+        margin-top: 48px;
+        font-size: 14px;
+        line-height: 21.45px;
+    }
+    .subscribeText{
+        font-size: 24px;
+    }
+    .footerSubscribeEmail{
+        position: relative;
+        left: 0;
+        margin: 0;
+        margin-top: 22.15px;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .footerBottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 143px
+    }
+    .footerBottomText{
+        position: absolute;
+        margin-left: 4.17%;
+        width: 251px;
+        top: 115px;
+    }
+    .footerBottoms{
+        position: absolute;
+        margin-right: 0%;
+        top: 43px;
+    }
+}
